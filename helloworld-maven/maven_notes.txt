@@ -1,0 +1,26 @@
+
+
+
+1) This generates the most simplest possible maven project
+------------------------------------------------------------
+
+  mvn archetype:generate -DgroupId=com.chanalex -DartifactId=helloworld -Dpackage=com.chanalex -Dversion=1.0-SNAPSHOT
+
+Will also create a helloworld program.
+
+Because no archetype was specified, the default "maven-archetype-quickstart" is used.
+
+
+2) To compile
+---------------
+  cd helloworld
+
+  mvn install
+
+This creates a jar
+
+
+3) Execute the jar file
+-----------------------
+
+java -cp target/helloworld-1.0-SNAPSHOT.jar com.chanalex.App
