@@ -1,0 +1,12 @@
+
+Although it is possible to read host environment variables from Java, it is discouraged for application configuration.
+Instead, Java allows any number of system property values to be passed to the application when the VM is started.
+System properties are simply name-value string pairs that are available to the application through the static System.getProperty() method.
+
+You can use these properties as a more structured and portable alternative to command-line arguments and environment variables for
+providing general configuration information to your application at startup.
+Each system property is passed to the interpreter on the command line using the -D option followed by name=value.
+
+$ java  -Dname=jack   -cp target/system_properties-1.0-SNAPSHOT.jar   com.chanalex.App
+Start:
+Hello jack
