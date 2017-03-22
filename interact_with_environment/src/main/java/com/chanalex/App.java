@@ -1,6 +1,7 @@
 package com.chanalex;
 
 
+import java.util.Properties;
 
 /**
  * Interact with environments
@@ -41,6 +42,14 @@ public class App
         } else {
             System.out.println("person_name property value = " + person_name);
         }
+
+        // Some system properties are pre-defined.
+        // This one return the java version in use.
+        String java_ver = System.getProperty("java.specification.version");
+        System.out.println("Java_ver = " + java_ver);
+
+        //System.getProperties returns all properties.
+        System.getProperties().list(System.out);
 
     }
 }
