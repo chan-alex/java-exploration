@@ -49,7 +49,13 @@ public class App {
             System.out.println("Token = " + st.nextToken());
         }
 
-        
+        System.out.println("\nBreaking string other character as line serparator:");
+        String str2 = "Java|has|a|lot|of|strings";
+        StringTokenizer st2 = new StringTokenizer(str2, "|");
+        while (st2.hasMoreElements()) {
+            System.out.println("Token =" + st2.nextElement());
+        }
+
     }
 }
 
