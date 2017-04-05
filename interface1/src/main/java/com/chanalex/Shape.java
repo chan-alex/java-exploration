@@ -4,10 +4,14 @@ interface Shape {
 
     // All member of an interface are implicitly public.
 
-    // implies this function is public.
     double area();
 
-    // Static methods in interfaces is new in 1.8
+    // New in 1.8
+    // Interfaces can implement default implementations of methods.
+    default String abcd() { return "Default implementation of abcd()"; };
+
+    // New in 1.8
+    // Static methods in interfaces are new in 1.8
     static void info() {
         System.out.println("From Shape interface, info()");
     };
