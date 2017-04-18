@@ -15,7 +15,8 @@ public class App
 
         System.out.println("Before asserts");
         //assert true;
-        assert(test_value > limit);
+        //assert(test_value > limit);
+        assert(test_value > 5);
         //if (test_value > limit)
         //   throw new AssertionError("fatal error: 42");
 
